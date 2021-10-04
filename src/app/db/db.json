@@ -1,0 +1,55 @@
+{
+  "home": {
+    "products": [
+      {
+        "img": "room_1.jpg",
+        "title": "Coombes",
+        "subtitle": "Lounge",
+        "rating": "4",
+        "price": "2,600"
+      },
+      {
+        "img": "room_2.jpg",
+        "title": "Keeve Set",
+        "subtitle": "Table & Chairs",
+        "rating": "4",
+        "price": "590"
+      },
+      {
+        "img": "room_3.jpg",
+        "title": "Nillè",
+        "subtitle": "Armchair",
+        "rating": "5",
+        "price": "950"
+      },
+      {
+        "img": "room_4.jpg",
+        "title": "Blanko",
+        "subtitle": "Side Table",
+        "rating": "4",
+        "price": "90"
+      },
+      {
+        "img": "room_5.jpg",
+        "title": "Momo",
+        "subtitle": "Shelves",
+        "rating": "4",
+        "price": "890"
+      },
+      {
+        "img": "room_6.jpg",
+        "title": "Penemillè",
+        "subtitle": "Chair",
+        "rating": "4",
+        "price": "120"
+      },
+      {
+        "img": "room_7.jpg",
+        "title": "Kappu",
+        "subtitle": "Shelves",
+        "rating": "4",
+        "price": "420"
+      }
+    ]
+  }
+}
