@@ -1,10 +1,17 @@
 .container {
+  max-width: 1366px;
   padding: 0 98px;
   margin: 0 auto;
-  @include media(tablet) {
+}
+
+@media (max-width: 1025px) {
+  .container {
     padding: 0 45px;
   }
-  @include media(mobile) {
+}
+
+@media (max-width: 481px) {
+  .container {
     padding: 0 15px;
   }
 }

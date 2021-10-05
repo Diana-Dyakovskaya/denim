@@ -15,9 +15,19 @@ header {
 
 html {
   font-family: "Work Sans", "Anton", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  color: #151c22;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 a {
+  color: inherit;
   text-decoration: none !important;
   transition: all 0.3s ease;
 }
@@ -30,6 +40,9 @@ li {
 
 button {
   outline: 0 !important;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 ::placeholder {
@@ -52,7 +65,7 @@ input {
 
 /* Изображения */
 
-.infinite-image {
-  width: 100%;
-  object-fit: contain;
+img {
+  max-width: 100%;
+  object-fit: cover;
 }

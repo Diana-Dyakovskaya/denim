@@ -1,0 +1,15 @@
+.btn-black {
+  display: block;
+  min-width: 200px;
+  background-color: #151c22;
+  color: #ffffff;
+  padding: 24px 0;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 700;
+  text-align: center;
+
+  @include media(mobile) {
+    min-width: 150px;
+  }
+}
