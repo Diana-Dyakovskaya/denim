@@ -30,6 +30,19 @@
       </div>
     </div>
   </section>
+  <section class='home__best best'>
+    <div class='container'>
+      <div class='best__top'>
+        <h2 class='best__title title'>Bestsellers</h2>
+        <a class='best__view view' href='#'>View all</a>
+      </div>
+      <div class='best__card'>
+        {{#each products.bestsellers}}
+          {{>blocks/product-card}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
 </main>
 {{> blocks/footer }}
 {{> layout/bottom }}

@@ -1,0 +1,37 @@
+.card {
+  &__img {
+    max-height: 270px;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    margin-top: 23px;
+  }
+
+  &__price {
+    margin-top: 7px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 481px) {
+  .card {
+    &__title {
+      margin-top: 0;
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    &__price {
+      margin-top: 2px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}

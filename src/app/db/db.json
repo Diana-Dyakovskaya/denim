@@ -1,54 +1,92 @@
 {
-  "home": {
-    "products": [
+  "products": {
+    "woman": {
+      "jacket": [
+        {
+          "img": "catalog/item_1.jpg",
+          "title": "Jacket",
+          "price": "40"
+        },
+        {
+          "img": "catalog/item_2.jpg",
+          "title": "Jacket",
+          "price": "70"
+        },
+        {
+          "img": "catalog/item_3.jpg",
+          "title": "Jacket",
+          "price": "60"
+        },
+        {
+          "img": "catalog/item_4.jpg",
+          "title": "Jacket",
+          "price": "50"
+        },
+        {
+          "img": "catalog/item_5.jpg",
+          "title": "Jacket",
+          "price": "40"
+        },
+        {
+          "img": "catalog/item_6.jpg",
+          "title": "Jacket",
+          "price": "110"
+        },
+        {
+          "img": "catalog/item_7.jpg",
+          "title": "Jacket",
+          "price": "160"
+        },
+        {
+          "img": "catalog/item_8.jpg",
+          "title": "Jacket",
+          "price": "35"
+        },
+        {
+          "img": "catalog/item_9.jpg",
+          "title": "Jacket",
+          "price": "85"
+        }
+      ]
+    },
+    "bestsellers": [
       {
-        "img": "room_1.jpg",
-        "title": "Coombes",
-        "subtitle": "Lounge",
-        "rating": "4",
-        "price": "2,600"
-      },
-      {
-        "img": "room_2.jpg",
-        "title": "Keeve Set",
-        "subtitle": "Table & Chairs",
-        "rating": "4",
-        "price": "590"
-      },
-      {
-        "img": "room_3.jpg",
-        "title": "Nillè",
-        "subtitle": "Armchair",
-        "rating": "5",
-        "price": "950"
-      },
-      {
-        "img": "room_4.jpg",
-        "title": "Blanko",
-        "subtitle": "Side Table",
-        "rating": "4",
-        "price": "90"
-      },
-      {
-        "img": "room_5.jpg",
-        "title": "Momo",
-        "subtitle": "Shelves",
-        "rating": "4",
-        "price": "890"
-      },
-      {
-        "img": "room_6.jpg",
-        "title": "Penemillè",
-        "subtitle": "Chair",
-        "rating": "4",
+        "img": "main/bestsell_1.jpg",
+        "title": "Jacket",
         "price": "120"
       },
       {
-        "img": "room_7.jpg",
-        "title": "Kappu",
-        "subtitle": "Shelves",
-        "rating": "4",
-        "price": "420"
+        "img": "main/bestsell_2.jpg",
+        "title": "Overalls",
+        "price": "140"
+      },
+      {
+        "img": "main/bestsell_3.jpg",
+        "title": "Jacket",
+        "price": "90"
+      },
+      {
+        "img": "main/bestsell_4.jpg",
+        "title": "Overalls",
+        "price": "160"
+      }
+    ],
+    "category": [
+      {
+        "img": "main/jeans.jpg",
+        "title": "Jeans"
+      },
+      {
+        "img": "main/shirts.jpg",
+        "title": "Shirts"
+      },
+      {
+        "img": "main/jackets.jpg",
+        "title": "Jackets"
+      },
+      {
+        "img": "main/overalls.jpg",
+        "title": "Overalls"
       }
     ]
   }
