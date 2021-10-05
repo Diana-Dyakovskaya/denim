@@ -1,68 +1,77 @@
-.footer-main {
-  color: #777777;
-  background: #0a0a0a;
+
+.footer {
+  background: #151c22;
+  color: #ffffff;
 
   &__container {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 45px 0;
+    text-align: center;
+  }
 
-    @include media(tabletSmall) {
-      padding-top: 70px;
+  .footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 24px;
+
+    &__items {
+      display: flex;
+      gap: 35px;
     }
   }
 
-  &__content {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
+  &__social {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 33px;
+  }
+}
 
-    @include media(tabletSmall) {
-      grid-template-columns: 1fr;
-      grid-gap: 40px;
+@media (max-width: 1025px) {
+  .footer {
+    .footer-menu {
+      margin-top: 29px;
+    }
+
+    &__social {
+      margin-top: 35px;
     }
   }
+}
 
-  &__logo {
-    @include media(tabletSmall) {
-      justify-self: center;
-    }
-  }
-
-  &__bottom {
-  }
-
-  &__socials {
-    @include media(tabletSmall, up) {
-      justify-content: flex-end;
+@media (max-width: 481px) {
+  .footer {
+    &__container {
+      padding: 45px 0;
+      text-align: start;
     }
 
-    @include media(tabletSmall) {
-      justify-content: center;
-    }
-  }
+    .footer-menu {
+      justify-content: flex-start;
+      gap: 0;
+      margin-top: -24px;
 
-  &__copyright {
-    margin-top: 10px;
-    margin-bottom: 0;
-    font-weight: 500;
-    font-size: 11px;
-
-    @include media(tabletSmall, up) {
-      text-align: right;
-    }
-
-    @include media(tabletSmall) {
-      text-align: center;
-    }
-
-    a {
-      transition: color 350ms ease;
-      color: inherit;
-
-      &:focus,
-      &:hover {
-        color: #fafafa;
+      &__items {
+        flex-direction: column;
+        gap: 22px;
+        flex: 1 1 50%;
       }
+
+      &__items:first-child {
+        padding-top: 44px;
+      }
+
+      &__items:last-child {
+        padding-left: 15px;
+      }
+    }
+
+    &__social {
+      gap: 38px;
+      margin-top: 37px;
+      justify-content: flex-start;
     }
   }
 }
