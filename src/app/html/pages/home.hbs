@@ -61,6 +61,19 @@
       </div>
     </div>
   </section>
+  <section class='home__category category'>
+    <div class='container'>
+      <div class='category__top'>
+        <h2 class='category__title title'>Shop by category</h2>
+        <a class='category__view view' href='#'>View all</a>
+      </div>
+      <div class='category__card'>
+        {{#each products.category}}
+          {{>blocks/category-card}}
+        {{/each}}
+      </div>
+    </div>
+  </section>
 </main>
 {{> blocks/footer }}
 {{> layout/bottom }}

@@ -202,6 +202,7 @@ img {
   }
 }
 .footer {
+  margin-top: 125px;
   background: #151c22;
   color: #ffffff;
 }
@@ -236,6 +237,9 @@ img {
   }
 }
 @media (max-width: 481px) {
+  .footer {
+    margin-top: 106px;
+  }
   .footer__container {
     padding: 45px 0;
     text-align: start;
@@ -290,12 +294,15 @@ img {
     line-height: 30px;
   }
 }
-.card__img {
-  max-height: 270px;
-  overflow: hidden;
+.card__link {
+  display: block;
 }
-.card__img img {
+.card img {
+  width: 100%;
+  height: 100%;
+  max-height: 270px;
   object-fit: cover;
+  object-position: center;
 }
 .card__title {
   margin-top: 23px;
@@ -336,6 +343,44 @@ img {
   font-weight: 800;
 }
 
+.sort__card .card__link {
+  display: block;
+}
+.sort__card .card__title {
+  margin-top: 23px;
+}
+.sort__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sort__card:nth-child(odd) img {
+  max-height: 349px;
+}
+
+.sort__card:nth-child(even) img {
+  max-height: 290px;
+}
+
+@media (max-width: 1025px) {
+  .sort__card:nth-child(3) {
+    order: 4;
+    margin-top: -28px;
+  }
+
+  .sort__card:nth-child(4) {
+    order: 3;
+  }
+}
+@media (max-width: 481px) {
+  .sort__card .card__title {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
 .home .header__menu {
   top: 93px;
 }
@@ -572,52 +617,60 @@ img {
     display: none;
   }
 }
-.best {
+.best,
+.category {
   margin-top: 120px;
 }
-.best__top {
+.best__top,
+.category__top {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.best__card {
+.best__card,
+.category__card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 60px;
   column-gap: 30px;
 }
-.best .card__img {
-  width: auto;
+
+.best .card img {
   max-height: 349px;
 }
 
+.category {
+  margin-top: 110px;
+}
+
 @media (max-width: 1025px) {
-  .best {
+  .best,
+.category {
     margin-top: 95px;
   }
-  .best__card {
+  .best__card,
+.category__card {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 44px;
     margin-top: 53px;
   }
-  .best .card__img {
-    max-width: 324px;
-    max-height: 349px;
-  }
 }
 @media (max-width: 481px) {
-  .best {
+  .best,
+.category {
     position: relative;
     margin-top: 52px;
   }
-  .best__view {
+  .best__view,
+.category__view {
     position: absolute;
     bottom: -57px;
     left: 40%;
     font-size: 16px;
     line-height: 19px;
   }
-  .best__card {
+  .best__card,
+.category__card {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 28px;
     margin-top: 33px;
@@ -693,6 +746,7 @@ img {
 @media (max-width: 481px) {
   .fall {
     position: relative;
+    height: 452px;
     margin-top: 117px;
   }
   .fall__container {

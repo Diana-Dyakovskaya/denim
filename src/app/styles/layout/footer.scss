@@ -1,5 +1,6 @@
 
 .footer {
+  margin-top: 125px;
   background: #151c22;
   color: #ffffff;
 
@@ -43,6 +44,7 @@
 
 @media (max-width: 481px) {
   .footer {
+    margin-top: 106px;
     &__container {
       padding: 45px 0;
       text-align: start;
