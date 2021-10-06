@@ -9,6 +9,11 @@
   border-bottom: 2px solid #151c22;
 }
 
+.light-title {
+  color: #727a82;
+  font-weight: 400;
+}
+
 @media (max-width: 1025px) {
   .title {
     font-size: 28px;
@@ -16,7 +21,7 @@
   }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 481px) {
   .title {
     font-size: 26px;
     line-height: 30px;
