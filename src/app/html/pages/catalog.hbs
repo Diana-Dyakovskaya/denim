@@ -26,6 +26,22 @@
       </div>
     </div>
   </section>
+  <section class='catalog__products products'>
+    <div class='container'>
+      <div class='products__filter filter'>
+        {{> blocks/filter }}
+      </div>
+      <div class='products__cards'>
+        {{#each products.woman.jacket}}
+          {{>blocks/product-card}}
+        {{/each}}
+      </div>
+      <div class='products__load'>
+        <p class='products__show'>Showing 9 of 45 items<span></span></p>
+      </div>
+      <button class='products__btn btn-black' type='button'>Load more</button>
+    </div>
+  </section>
 </main>
 {{> blocks/footer }}
 {{> layout/bottom }}
