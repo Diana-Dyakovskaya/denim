@@ -55,5 +55,36 @@ export const app = () => {
       sliderTrack.style.background = `linear-gradient(to right, #f1f2f4 ${percent1}%, #151C22 ${percent1}%, #151C22 ${percent2}%, #f1f2f4 ${percent2}%)`
     }
     fillColor()
+    // active
+    const colorItems = document.querySelector('.color')
+    colorItems.addEventListener('click', (event) => {
+      if (!event.target.closest('.color__item')) {
+        return
+      }
+      activeItem(event.target)
+    })
+    const activeItem = (el) => {
+      el.classList.toggle('active')
+    }
+    const collections = document.querySelector('.filter__collections')
+    collections.addEventListener('click', (event) => {
+      if (!event.target.closest('.filter__collection')) {
+        return
+      }
+      activeElem(event.target)
+    })
+    const activeElem = (el) => {
+      el.classList.toggle('active')
+    }
+    const sizes = document.querySelector('.product__sizes')
+    sizes.addEventListener('click', (event) => {
+      if (!event.target.closest('.product__size')) {
+        return
+      }
+      activeSize(event.target)
+    })
+    const activeSize = (el) => {
+      el.classList.toggle('active')
+    }
   })
 }

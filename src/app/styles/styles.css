@@ -618,6 +618,10 @@ input[type=radio] {
   height: 16px;
 }
 
+.color__item.active {
+  box-shadow: 0 0 0 5px #ffffff, 0 0 0 6px #151c22;
+}
+
 .color__items {
   position: absolute;
   top: 0;
@@ -663,7 +667,7 @@ input[type=radio] {
   box-shadow: 0 0 0 5px #ffffff, 0 0 0 6px #151c22;
 }
 
-.filter__collection {
+.filter__collections {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -672,10 +676,14 @@ input[type=radio] {
   margin-top: -2px;
   color: #727a82;
 }
-.filter__collection p:hover,
-.filter__collection p:active {
+.filter__collections p:hover,
+.filter__collections p:active {
   color: #151c22;
   cursor: pointer;
+}
+
+.filter__collection.active {
+  color: #151c22;
 }
 
 .filter__apply {
@@ -718,7 +726,7 @@ input[type=radio] {
     padding-right: 50px;
   }
 
-  .filter__collection {
+  .filter__collections {
     gap: 20px;
     justify-content: flex-start;
     padding-right: 20px;
@@ -1414,6 +1422,83 @@ input[type=radio] {
   .products__btn {
     margin-top: 32px;
     width: 177px;
+  }
+}
+.product__intro {
+  max-width: 1366px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-left: 98px;
+}
+.product__container {
+  display: flex;
+  gap: 50px;
+}
+.product__gallery {
+  flex: 1 1 45%;
+}
+.product__description {
+  flex: 1 1 55%;
+  padding-top: 65px;
+  padding-bottom: 70px;
+  padding-left: 70px;
+  background: #f1f2f4;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.product__title {
+  margin: 0;
+}
+.product__subtitle {
+  max-width: 370px;
+  margin-top: 30px;
+  font-size: 16px;
+  line-height: 19px;
+}
+.product__name {
+  margin-top: 40px;
+}
+.product__color {
+  position: relative;
+  margin-top: 25px;
+  margin-left: 7px;
+}
+.product .color__items_radio {
+  gap: 29px;
+}
+.product .color__items {
+  gap: 29px;
+}
+.product__sizes {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+}
+.product__size {
+  color: #727a82;
+}
+.product__size:hover, .product__size:active {
+  color: #151c22;
+  cursor: pointer;
+}
+.product .product__size.active {
+  color: #151c22;
+}
+.product__price {
+  margin-top: 33px;
+  font-weight: 700;
+}
+.product__button {
+  width: 200px;
+  margin-top: 45px;
+  margin-right: auto;
+}
+
+.product .best .card img {
+  height: 349px;
+}
+@media (max-width: 481px) {
+  .product .best .card img {
+    height: 160px;
   }
 }
 

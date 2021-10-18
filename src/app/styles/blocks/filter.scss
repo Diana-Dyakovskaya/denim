@@ -170,6 +170,10 @@ input[type="radio"] {
   height: 16px;
 }
 
+.color__item.active {
+  box-shadow: 0 0 0 5px #ffffff, 0 0 0 6px #151c22;
+}
+
 .color__items {
   position: absolute;
   top: 0;
@@ -215,7 +219,7 @@ input[type="radio"] {
   box-shadow: 0 0 0 5px #ffffff, 0 0 0 6px #151c22;
 }
 
-.filter__collection {
+.filter__collections {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -229,6 +233,10 @@ input[type="radio"] {
     color: #151c22;
     cursor: pointer;
   }
+}
+
+.filter__collection.active {
+  color: #151c22;
 }
 
 .filter__apply {
@@ -276,7 +284,7 @@ input[type="radio"] {
     padding-right: 50px;
   }
 
-  .filter__collection {
+  .filter__collections {
     gap: 20px;
     justify-content: flex-start;
     padding-right: 20px;
