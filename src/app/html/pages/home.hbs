@@ -1,73 +1,73 @@
 {{!Home}}
 
 {{> layout/head page-title="Denim"}}
-<div class='home'>
+<div class="home">
   {{> blocks/header }}
 </div>
-<main class='home'>
-  <section class='home__intro intro'>
-    <div class='container'>
-      <div class='intro__relative'>
-        <div class='intro__container'>
-          <div class='into__description'>
-            <h1 class='intro__title light-title'>The quality you deserve</h1>
-            <p class='intro__subtitle'>DENIM</p>
-            <button class='intro__btn btn-black' type='button'>Check new collection</button>
+<main class="home">
+  <section class="home__intro intro">
+    <div class="container">
+      <div class="intro__relative">
+        <div class="intro__container">
+          <div class="into__description">
+            <h1 class="intro__title light-title">The quality you deserve</h1>
+            <p class="intro__subtitle">DENIM</p>
+            <button class="intro__btn btn-black" type="button">Check new collection</button>
           </div>
-          <div class='intro__pictures'>
-            <div class='intro__pictures_bck'>
-              <img class='intro__img' src='../assets/images/main/major.jpg' width='430' height='517' alt='headband'>
+          <div class="intro__pictures">
+            <div class="intro__pictures_bck">
+              <img class="intro__img" src="../assets/images/main/major.jpg" width="430" height="517" alt="headband">
             </div>
           </div>
         </div>
-        <div class='intro__social'>
-          <a class='intro__social_link' href='https://www.facebook.com'>Facebook</a>
-          <a class='intro__social_link' href='https://www.instagram.com'>Instagram</a>
+        <div class="intro__social">
+          <a class="intro__social_link" href="https://www.facebook.com">Facebook</a>
+          <a class="intro__social_link" href="https://www.instagram.com">Instagram</a>
         </div>
-        <button class='intro__arrow' type='button'>
-          <img src='../assets/images/main/arrow.png' width='10' height='27'>
+        <button class="intro__arrow" type="button">
+          <img src="../assets/images/main/arrow.png" width="10" height="27">
         </button>
       </div>
     </div>
   </section>
-  <section class='home__best best'>
-    <div class='container'>
-      <div class='best__top'>
-        <h2 class='best__title title'>Bestsellers</h2>
-        <a class='best__view view' href='#'>View all</a>
+  <section class="home__best best">
+    <div class="container">
+      <div class="best__top">
+        <h2 class="best__title title">Bestsellers</h2>
+        <a class="best__view view" href="#">View all</a>
       </div>
-      <div class='best__card'>
+      <div class="best__card">
         {{#each products.bestsellers}}
           {{>blocks/product-card}}
         {{/each}}
       </div>
     </div>
   </section>
-  <section class='home__fall fall'>
-    <div class='container'>
-      <div class='fall__container'>
-        <div class='fall__picture'>
-          <img class='fall__img' src='../assets/images/main/collection.jpg'>
+  <section class="home__fall fall">
+    <div class="container">
+      <div class="fall__container">
+        <div class="fall__picture">
+          <img class="fall__img" src="../assets/images/main/collection.jpg">
         </div>
-        <div class='fall__background'>
-          <div class='fall__description'>
-            <div class='fall__content'>
-              <h2 class='fall__title light-title'>Street fashion collection</h2>
-              <p class='fall__subtitle'>Fall 2019</p>
-              <button class='fall__btn btn-black' type='button'>Shop now</button>
+        <div class="fall__background">
+          <div class="fall__description">
+            <div class="fall__content">
+              <h2 class="fall__title light-title">Street fashion collection</h2>
+              <p class="fall__subtitle">Fall 2019</p>
+              <button class="fall__btn btn-black" type="button">Shop now</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class='home__category category'>
-    <div class='container'>
-      <div class='category__top'>
-        <h2 class='category__title title'>Shop by category</h2>
-        <a class='category__view view' href='#'>View all</a>
+  <section class="home__category category">
+    <div class="container">
+      <div class="category__top">
+        <h2 class="category__title title">Shop by category</h2>
+        <a class="category__view view" href="#">View all</a>
       </div>
-      <div class='category__card'>
+      <div class="category__card">
         {{#each products.category}}
           {{>blocks/category-card}}
         {{/each}}

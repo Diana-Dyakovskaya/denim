@@ -2,70 +2,72 @@
 
 {{> layout/head page-title="Denim product"}}
 {{> blocks/header }}
-<main class='product'>
-  <section class='product__intro'>
-    <div class='product__container'>
-      <div class='product__gallery gallery'>
-        <button class='gallery__button js-btn-prev' type='button'>
-          <img class='gallery__prev' src='../assets/images/catalog/arrow.png'>
+<main class="product">
+  <section class="product__intro">
+    <div class="product__container">
+      <div class="product__gallery gallery">
+        <button class="gallery__button js-btn-prev" type="button">
+          <img class="gallery__prev" src="../assets/images/catalog/arrow.png">
         </button>
-        <div class='gallery__slider carousel'>
-          <div class='carousel__view'>
-            <div class='carousel__line'>
-              <img class='carousel__img' src='../assets/images/product/pic_1.jpg'>
-              <img class='carousel__img' src='../assets/images/product/pic_2.jpg'>
-              <img class='carousel__img' src='../assets/images/product/pic_3.jpg'>
-              <img class='carousel__img' src='../assets/images/product/pic_4.jpg'>
-              <img class='carousel__img' src='../assets/images/product/pic_5.jpg'>
+        <div class="gallery__slider carousel">
+          <div class="carousel__view">
+            <div class="carousel__line">
+              <img class="carousel__img" src="../assets/images/product/pic_1.jpg">
+              <img class="carousel__img" src="../assets/images/product/pic_2.jpg">
+              <img class="carousel__img" src="../assets/images/product/pic_3.jpg">
+              <img class="carousel__img" src="../assets/images/product/pic_4.jpg">
+              <img class="carousel__img" src="../assets/images/product/pic_5.jpg">
             </div>
           </div>
-          <div class='carousel__midget'>
-            <img class='carousel__midget_img' src='../assets/images/product/min_1.jpg'>
-            <img class='carousel__midget_img' src='../assets/images/product/min_2.jpg'>
-            <img class='carousel__midget_img' src='../assets/images/product/min_3.jpg'>
-            <img class='carousel__midget_img' src='../assets/images/product/min_4.jpg'>
+          <div class="carousel__midget">
+            <img class="carousel__midget_img" src="../assets/images/product/min_1.jpg">
+            <img class="carousel__midget_img" src="../assets/images/product/min_2.jpg">
+            <img class="carousel__midget_img" src="../assets/images/product/min_3.jpg">
+            <img class="carousel__midget_img" src="../assets/images/product/min_4.jpg">
           </div>
         </div>
-        <button class='gallery__button js-btn-next' type='button'>
-          <img class='gallery__next' src='../assets/images/catalog/arrow.png'>
+        <button class="gallery__button js-btn-next" type="button">
+          <img class="gallery__next" src="../assets/images/catalog/arrow.png">
         </button>
       </div>
-      <div class='product__description'>
-        <h1 class='product__title title'>Overalls</h1>
-        <p class='product__subtitle'>Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front pockets and back pockets.</p>
-        <p class='product__name'>Color</p>
-        <form class='product__color color' action='#'>
-          <div class='color__items_radio'>
-            <input type='radio' name='color' value='1'>
-            <input type='radio' name='color' value='2'>
-            <input type='radio' name='color' value='3'>
+      <div class="product__description">
+        <h1 class="product__title title">Overalls</h1>
+        <p class="product__subtitle">Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at
+          waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front pockets and back
+          pockets.</p>
+        <p class="product__name">Color</p>
+        <form class="product__color color" action="#">
+          <div class="color__items_radio">
+            <input type="radio" name="color" value="1">
+            <input type="radio" name="color" value="2">
+            <input type="radio" name="color" value="3">
           </div>
-          <div class='color__items'>
-            <p class='color__item'></p>
-            <p class='color__item'></p>
-            <p class='color__item'></p>
+          <div class="color__items">
+            <p class="color__item"></p>
+            <p class="color__item"></p>
+            <p class="color__item"></p>
           </div>
         </form>
-        <p class='product__name'>Size</p>
-        <div class='product__sizes'>
-          <p class='product__size'>XS</p>
-          <p class='product__size'>S</p>
-          <p class='product__size'>M</p>
-          <p class='product__size'>L</p>
-          <p class='product__size'>XL</p>
+        <p class="product__name">Size</p>
+        <div class="product__sizes">
+          <p class="product__size">XS</p
+          <p class="product__size">S</p>
+          <p class="product__size">M</p>
+          <p class="product__size">L</p>
+          <p class="product__size">XL</p>
         </div>
-        <p class='product__price'>$ 160</p>
-        <button class='product__button btn-black' type='button'>Add to cart</button>
+        <p class="product__price">$ 160</p>
+        <button class="product__button btn-black" type="button">Add to cart</button>
       </div>
     </div>
   </section>
-  <section class='product__best best'>
-    <div class='container'>
-      <div class='best__top'>
-        <h2 class='best__title title'>You may also like</h2>
-        <a class='best__view view' href='#'>View all</a>
+  <section class="product__best best">
+    <div class="container">
+      <div class="best__top">
+        <h2 class="best__title title">You may also like</h2>
+        <a class="best__view view" href="#">View all</a>
       </div>
-      <div class='best__card'>
+      <div class="best__card">
         {{#each products.offer}}
           {{>blocks/product-card}}
         {{/each}}
