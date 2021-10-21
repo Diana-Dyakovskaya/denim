@@ -1,12 +1,12 @@
 export class Slider {
   constructor(el) {
-    this.$sliderOne = el.getElementById('slider-1')
-    this.$sliderTwo = el.getElementById('slider-2')
-    this.$displayValOne = el.getElementById('range1')
-    this.$displayValTwo = el.getElementById('range2')
+    this.$sliderOne = el.querySelector('#slider-1')
+    this.$sliderTwo = el.querySelector('#slider-2')
+    this.$displayValOne = el.querySelector('#range1')
+    this.$displayValTwo = el.querySelector('#range2')
     this.minGap = 0
     this.$sliderTrack = el.querySelector('.filter__slider_track')
-    this.$sliderMaxValue = el.getElementById('slider-1').max
+    this.$sliderMaxValue = el.querySelector('#slider-1').max
     this.slideOne = this.slideOne.bind(this)
     this.slideTwo = this.slideTwo.bind(this)
     this.sliderAction()
