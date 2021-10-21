@@ -3,6 +3,8 @@ export class Carousel {
   constructor(el) {
     this.$widthView = el.querySelector('.carousel__view').offsetWidth
     this.$carouselLine = el.querySelector('.carousel__line')
+    this.$images = el.querySelectorAll('.carousel__img')
+    this.$midgetImgs = el.querySelectorAll('.carousel__midget_img')
     this.$btnPrev = el.querySelector('.js-btn-prev')
     this.$btnNext = el.querySelector('.js-btn-next')
     this.slide = 0
@@ -11,24 +13,42 @@ export class Carousel {
   }
 
   actionNext() {
-    this.$btnNext.addEventListener('click', (event) => {
-      if (this.slide < this.$carouselLine.length) {
+    this.$btnNext.addEventListener('click', () => {
+      if (this.slide < this.$images.length - 1) {
         this.slide += 1
       } else {
         this.slide = 0
       }
       this.$carouselLine.style.left = -this.slide * this.$widthView + 'px'
+      if (this.slide > 0) {
+        this.$midgetImgs[this.slide - 1].classList.add('active')
+        if (this.slide - 1 > 0) {
+          this.$midgetImgs[this.slide - 2].classList.remove('active')
+        }
+      }
+      if (this.slide === 0) {
+        this.$midgetImgs[this.$midgetImgs.length - 1].classList.remove('active')
+      }
     })
   }
 
   actionPrev() {
-    this.$btnPrev.addEventListener('click', (event) => {
+    this.$btnPrev.addEventListener('click', () => {
       if (this.slide > 0) {
         this.slide -= 1
       } else {
-        this.slide = this.$carouselLine.length - 1
+        this.slide = this.$images.length - 1
       }
       this.$carouselLine.style.left = -this.slide * this.$widthView + 'px'
+      if (this.slide > 0) {
+        this.$midgetImgs[this.slide - 1].classList.add('active')
+        if (this.slide - 1 >= 0) {
+          this.$midgetImgs[this.slide].classList.remove('active')
+        }
+      }
+      if (this.slide === 0) {
+        this.$midgetImgs[0].classList.remove('active')
+      }
     })
   }
 

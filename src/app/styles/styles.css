@@ -1464,7 +1464,8 @@ input[type=radio] {
 }
 .product .carousel__img {
   width: 400px;
-  height: 523px;
+  height: auto;
+  object-fit: cover;
 }
 .product .carousel__midget {
   display: flex;
@@ -1474,6 +1475,9 @@ input[type=radio] {
 .product .carousel__midget_img {
   width: 85px;
   height: 113px;
+}
+.product .carousel__midget_img.active {
+  filter: brightness(0.6);
 }
 .product__description {
   flex: 1 1 55%;
