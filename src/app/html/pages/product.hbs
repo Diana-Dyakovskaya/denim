@@ -6,7 +6,7 @@
   <section class="product__intro">
     <div class="product__container">
       <div class="product__gallery gallery js-carousel">
-        <button class="gallery__button js-btn-prev" type="button">
+        <button class="gallery__button gallery__button_prev js-btn-prev" type="button">
           <img class="gallery__prev" src="../assets/images/catalog/arrow.png">
         </button>
         <div class="gallery__slider carousel">
@@ -26,14 +26,14 @@
             <img class="carousel__midget_img" src="../assets/images/product/min_4.jpg">
           </div>
         </div>
-        <button class="gallery__button js-btn-next" type="button">
+        <button class="gallery__button gallery__button_next js-btn-next" type="button">
           <img class="gallery__next" src="../assets/images/catalog/arrow.png">
         </button>
       </div>
       <div class="product__description">
         <h1 class="product__title title">Overalls</h1>
         <p class="product__subtitle">Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at
-          waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front pockets and back
+          waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front and back
           pockets.</p>
         <p class="product__name">Color</p>
         <form class="product__color color" action="#">
@@ -75,5 +75,7 @@
     </div>
   </section>
 </main>
-{{> blocks/footer }}
+<div class="product__footer">
+  {{> blocks/footer }}
+</div>
 {{> layout/bottom }}
