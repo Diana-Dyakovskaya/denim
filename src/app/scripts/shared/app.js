@@ -1,6 +1,7 @@
 import { Carousel, Color, Collection, Size } from '@app/components/carousel'
 import { Slider } from '@app/components/range-slider'
 import { Filter } from '@app/components/filter'
+import { Scroll } from '@app/components/scroll'
 
 export const app = () => {
   document.addEventListener('DOMContentLoaded', () => {
@@ -30,7 +31,8 @@ export const app = () => {
       Size.init(size)
     })
 
-    // rangeSlider()
-    // carousel()
+    document.querySelectorAll('.js-home').forEach((scroll) => {
+      Scroll.init(scroll)
+    })
   })
 }
